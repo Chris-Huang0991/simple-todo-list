@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/relay-runtime": "9.1.0",
+    "react": "^0.0.0-experimental-7f28234f8",
+    "react-dom": "^0.0.0-experimental-7f28234f8",
+    "react-hook-form": "^6.0.1",
+    "react-relay": "^0.0.0-experimental-94e87455",
+    "react-relay-network-modern": "^4.7.3",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "update:schema": "dotenv -e .env.local yarn schema",
+    "schema": "get-graphql-schema $REACT_APP_API_ENDPOINT > schema.graphql",
+    "relay": "relay-compiler"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-relay": "^7.0.8",
+    "babel-plugin-macros": "^2.8.0",
+    "babel-plugin-relay": "^9.1.0",
+    "dotenv-cli": "^3.2.0",
+    "get-graphql-schema": "^2.1.2",
+    "graphql": "^15.3.0",
+    "relay-compiler": "^9.1.0",
+    "relay-compiler-language-typescript": "^12.0.3",
+    "relay-config": "^9.1.0"
+  }
+}
