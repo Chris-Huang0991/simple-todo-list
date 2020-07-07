@@ -16,6 +16,7 @@
     "@types/relay-runtime": "9.1.0",
     "react": "^0.0.0-experimental-7f28234f8",
     "react-dom": "^0.0.0-experimental-7f28234f8",
+    "react-error-boundary": "^2.2.3",
     "react-hook-form": "^6.0.1",
     "react-relay": "^0.0.0-experimental-94e87455",
     "react-relay-network-modern": "^4.7.3",

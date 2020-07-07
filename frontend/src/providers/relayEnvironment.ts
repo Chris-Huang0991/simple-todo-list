@@ -8,7 +8,8 @@ const network = new RelayNetworkLayer(
     urlMiddleware({
       url: () => Promise.resolve(API_ENDPOINT),
     })
-  ]
+  ],
+  { noThrow: true }
 )
 
 export default new Environment({
